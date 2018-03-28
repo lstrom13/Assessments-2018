@@ -44,6 +44,22 @@ Then, past the code in your console and explain why you were right/wrong.
 
 when i ran text it showed "outside" cause it didnt create a new variable for text. like text.new = "inside"
 
+// -------------------- HOISTING
+
+``` javascript
+
+var text
+text = 'outside';
+function logIt() {
+	var text;
+    console.log(text);
+    text = 'inside';
+};
+
+logIt();
+
+```
+
 #### 3. What is JSON? How does it relate to javascript objects?
 
   //Your Answer
